@@ -11,14 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170116194755) do
+ActiveRecord::Schema.define(version: 20170117093051) do
 
   create_table "shows", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "name"
     t.string   "genre"
     t.integer  "seasons"
+    t.text     "description"
+    t.string   "image"
+    t.string   "programmeID"
   end
 
 end

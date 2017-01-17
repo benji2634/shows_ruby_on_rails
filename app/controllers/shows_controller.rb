@@ -1,20 +1,19 @@
 class ShowsController < ApplicationController
 
   def index
-    @shows = Show.all
-    render :json => @shows
+    shows = Show.all
+    render :json => shows
   end
 
   def create
-    @new_show = Show.create(show_params)
-    render :json => @new_show
+    show = Show.create(show_params)
+    render :json => show, status: :created
   end
 
   private
 
   def show_params
-    params.permit(:name, :genre, :seasons)
+    params.require(:show).permit([:name, :genre, :seasons, :description, :image, :programmeID])
   end
-
 
 end
