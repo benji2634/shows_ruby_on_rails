@@ -12,3 +12,4 @@ Show.create({name: 'Stranger Things', genre: 'Drama, Fantasy, Horror', seasons: 
 Show.create({name: 'Flash Forward', genre: 'Drama, Mystery, Sci-Fi', seasons: 1})
 Show.create({name: 'Game of Thrones', genre: 'Adventure, Drama, Fantasy', seasons: 8})
 Show.create({name: 'Breaking Bad', genre: ' Crime, Drama, Thriller', seasons: 5})
+
